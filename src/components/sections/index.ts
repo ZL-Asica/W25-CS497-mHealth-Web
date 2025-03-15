@@ -1,0 +1,5 @@
+export { default as Background } from './Background'
+export { default as Conclusion } from './Conclusion'
+export { default as Findings } from './Findings'
+export { default as Methodology } from './Methodology'
+export { default as Team } from './Team'

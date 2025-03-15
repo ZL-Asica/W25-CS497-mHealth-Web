@@ -1,0 +1,58 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Roboto', 'Arial', sans-serif;
+
+  --color-sakura-50: #fef2f4;
+  --color-sakura-100: #fde6ea;
+  --color-sakura-200: #fad1d9;
+  --color-sakura-300: #f6a8b8; /* sakura - main */
+  --color-sakura-400: #f17b96;
+  --color-sakura-500: #e64d73;
+  --color-sakura-600: #d22c5e;
+  --color-sakura-700: #b11f4f;
+  --color-sakura-800: #941d48;
+  --color-sakura-900: #7f1c42;
+  --color-sakura-950: #470a20;
+
+  --color-sora-50: #f0faff;
+  --color-sora-100: #e0f3fe;
+  --color-sora-200: #bae9fd;
+  --color-sora-300: #5bcefa; /* sora - main */
+  --color-sora-400: #39c5f7;
+  --color-sora-500: #10aee7;
+  --color-sora-600: #038dc6;
+  --color-sora-700: #0470a0;
+  --color-sora-800: #085f84;
+  --color-sora-900: #0d4e6d;
+  --color-sora-950: #083249;
+
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+
+  --color-foreground-light: var(--foreground-light);
+  --color-foreground-dark: var(--foreground-gray);
+}
+
+@layer utilities {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --foreground-light: #f9fafb;
+    --foreground-gray: #1f2937;
+  }
+
+  .dark:root {
+    --background: #1a1a1a;
+    --foreground: #d4d4d4;
+    --foreground-light: #1f2937;
+    --foreground-gray: #d1d5db;
+  }
+}
+
+html,
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+@import './zla-theme.css';
+
+@utility bold-text {
+  font-weight: 500;
+  color: var(--color-sakura-300);
+}
+
+@keyframes infinite-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.animate-gradient-bg {
+  animation: infinite-gradient 10s infinite linear;
+}
